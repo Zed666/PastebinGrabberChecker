@@ -87,10 +87,6 @@ def ChangeTrend(trend, LineUrl):
 	else:
 		#Иначе пишем что ничего нет
 		print LineUrl + " - Found, not grabbed";
-		#Проверка, если ссылки нет то
-		if not os.path.isfile(trend + LineUrl + ".txt"):
-			#Делаем ссылку
-			os.symlink("../data"  + LineUrl + ".txt", trend + LineUrl + ".txt");
 
 
 #Главная функция
